@@ -4,6 +4,7 @@
   </div>
 
   <div fxFlex fxLayout="row" class="main">
+
       <!-- for moblie usage
            <div fxFlex="200px" class="aside scrollbar" fxHide.xs>
           <app-aside></app-aside>
@@ -21,8 +22,20 @@
                  </div>
                </mat-sidenav>
 
-     <div fxFlex class="content">
+     <!-- <div fxFlex class="content">
       <router-outlet></router-outlet>
+    </div> -->
+    <div class="content">
+      <mat-grid-list cols="5" rowHeight="350px" gutterSize="10px" ratio="5:3">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows">
+            <img src={{tile.src}}/>
+
+        </mat-grid-tile>
+
+      </mat-grid-list>
     </div>
   </mat-sidenav-container>
   </div>
