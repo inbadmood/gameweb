@@ -1,0 +1,39 @@
+<mat-list>
+  <h3 mat-subheader>test list</h3>
+  <button mat-button routerLink="./calendar" (click)="menu_click()">
+    <mat-list-item>
+      <mat-icon mat-list-icon>today</mat-icon>
+      <h4 mat-line>Calendar</h4>
+    </mat-list-item>
+  </button>
+  <button mat-button routerLink="./doc" (click)="menu_click()">
+    <mat-list-item>
+      <mat-icon mat-list-icon>border_color</mat-icon>
+      <h4 mat-line>心得</h4>
+    </mat-list-item>
+  </button>
+  <button mat-button routerLink="./notebook" (click)="menu_click()">
+    <mat-list-item>
+      <mat-icon mat-list-icon>playlist_add_check</mat-icon>
+      <h4 mat-line>雜項</h4>
+    </mat-list-item>
+  </button>
+  <button mat-button routerLink="./search" (click)="menu_click()">
+    <mat-list-item>
+      <mat-icon mat-list-icon>search</mat-icon>
+      <h4 mat-line>Search</h4>
+    </mat-list-item>
+  </button>
+  <button mat-button routerLink="./donate" (click)="menu_click()">
+    <mat-list-item>
+      <mat-icon mat-list-icon>attach_money</mat-icon>
+      <h4 mat-line>Donate</h4>
+    </mat-list-item>
+  </button>
+  <button mat-button routerLink="./contact" (click)="menu_click()">
+      <mat-list-item>
+        <mat-icon mat-list-icon>contact_phone</mat-icon>
+        <h4 mat-line>Contact</h4>
+      </mat-list-item>
+  </button>
+</mat-list>

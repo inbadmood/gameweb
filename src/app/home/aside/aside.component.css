@@ -1,0 +1,21 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+.mat-subheader
+{
+  color: black;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+h4 {
+  color: black;
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+mat-icon{
+  color:black;
+}
+button{
+  width: 200px;
+}
+
+
