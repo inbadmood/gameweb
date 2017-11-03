@@ -25,17 +25,25 @@
      <!-- <div fxFlex class="content">
       <router-outlet></router-outlet>
     </div> -->
-    <div class="content">
-      <mat-grid-list cols="6" rowHeight="350px" gutterSize="10px" ratio="5:3">
+    <div class="content scrollbar">
+      <div calss="jp">
+          <img src={{jpsrc}} class="jpimg"/>
+      </div>
+      <div class="sideline">
+        <img src={{sidesrc}}/>
+      </div>
+      <div class="gameiconContainer">
+      <mat-grid-list cols="6" rowHeight="350px" gutterSize="-100px" ratio="5:3">
         <mat-grid-tile
-            *ngFor="let tile of tiles"
+            *ngFor="let tile of tiles; let gameIndex = index"
             [colspan]="tile.cols"
             [rowspan]="tile.rows">
-            <img src={{tile.src}}/>
+            <img src={{imgsrc[gameIndex]}} (mouseover)="onMouseOver(gameIndex)" (mouseout)="onMouseOut(gameIndex)" />
 
         </mat-grid-tile>
 
       </mat-grid-list>
+    </div>
     </div>
   </mat-sidenav-container>
   </div>

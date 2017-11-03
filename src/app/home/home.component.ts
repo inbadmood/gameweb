@@ -6,18 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  tiles = [
-    {src: './../../assets/images/icon/game-0.png', cols: 1, rows: 1},
-    {src: './../../assets/images/icon/game-1.png', cols: 1, rows: 1},
-    {src: './../../assets/images/icon/game-2.png', cols: 1, rows: 1},
-    {src: './../../assets/images/icon/game-3.png', cols: 1, rows: 1},
-    {src: './../../assets/images/icon/game-4.png', cols: 1, rows: 1},
-    {src: './../../assets/images/icon/game-5.png', cols: 1, rows: 1},
-    {src: './../../assets/images/icon/game-6.png', cols: 1, rows: 1},
-  ];
+  gameiconsrc: string;
+  sidesrc= './../../assets/images/ui/sideline.png';
+  jpsrc= './../../assets/images/ui/jp.png';
+  imgsrc= [];
+  tiles = [];
+
   constructor() { }
 
   ngOnInit() {
+    for (let i = 0 ; i < 14; i++) {
+      this.gameiconsrc = './../../assets/images/icon/game-' + i + '.png';
+      this.tiles[i] = {cols: 1, rows: 1};
+      this.imgsrc[i] = this.gameiconsrc;
+    }
+  }
+  onMouseOut(i: number): void {
+    this.imgsrc[i] =  './../../assets/images/icon/game-' + i + '.png';
+  }
+  onMouseOver(i: number): void {
+    this.imgsrc[i] =  './../../assets/images/icon/game-D' + i + '.png';
   }
 
 }

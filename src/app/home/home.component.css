@@ -16,15 +16,15 @@
       z-index: 10;
     }
     .content {
-      background: orange;
+      background-image: url(/assets/images/ui/bg.png);
       height: 100%;
       margin: 0px;
-      overflow-y: hidden;
+      overflow-y: auto;
     }
     .scrollbar {
       overflow-x: hidden;
       overflow-y: auto;
-      padding-bottom: 48px;
+      /* padding-bottom: 48px; */
     }
 
     .scrollbar::-webkit-scrollbar-track
@@ -46,3 +46,16 @@
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
       background-color: #555;
     }
+    .gameiconContainer
+    {
+      margin: 0px 150px 0px 150px;
+    }
+    .sideline
+    {
+      margin: 0px 0px 0px 0px;
+     }
+     .jpimg
+     {
+      display:block;
+      margin:auto;
+     }
