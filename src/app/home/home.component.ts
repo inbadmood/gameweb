@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   gameiconsrc: string;
+  gamename= ['5Dragons', 'Alibaba', 'SweetCandy', 'FortuneThai', 'GoldChicken',
+             'GoldFish2', 'CaptainHook', 'HUCA', 'Jungle', 'LoveCity',
+             'LuckyFruits', 'MagicGem', 'Pharaoh', 'Royal777' ];
   sidesrc= './../../assets/images/ui/sideline.png';
   jpsrc= './../../assets/images/ui/jp.png';
   imgsrc= [];

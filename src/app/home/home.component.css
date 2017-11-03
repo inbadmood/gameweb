@@ -52,10 +52,17 @@
     }
     .sideline
     {
-      margin: 0px 0px 0px 0px;
+
      }
      .jpimg
      {
       display:block;
       margin:auto;
+     }
+
+     .IconFooterText
+     {
+       color: white;
+       width: 100px;
+       margin: 0px 0px 0px 0px;
      }

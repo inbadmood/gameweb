@@ -33,15 +33,17 @@
         <img src={{sidesrc}}/>
       </div>
       <div class="gameiconContainer">
-      <mat-grid-list cols="6" rowHeight="350px" gutterSize="-100px" ratio="5:3">
+      <mat-grid-list cols="6" rowHeight="350px" gutterSize="-60px" ratio="5:3">
         <mat-grid-tile
             *ngFor="let tile of tiles; let gameIndex = index"
             [colspan]="tile.cols"
             [rowspan]="tile.rows">
             <img src={{imgsrc[gameIndex]}} (mouseover)="onMouseOver(gameIndex)" (mouseout)="onMouseOut(gameIndex)" />
 
-        </mat-grid-tile>
-
+        <mat-grid-tile-footer class="IconFooter">
+        <div class="IconFooterText">{{gamename[gameIndex]}}</div>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
       </mat-grid-list>
     </div>
     </div>
