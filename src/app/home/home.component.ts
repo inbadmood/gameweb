@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   jpsrc= 'http://106.104.137.96:8080/TestApp/gameWeb/assets/images/ui/jp.png';
   imgsrc= [];
   tiles = [];
+
    gameUrls = ['http://106.104.137.96:8080/TestApp/5dragons',
               'http://106.104.137.96:8080/TestApp/alibaba',
               'http://106.104.137.96:8080/TestApp/sweetcandy',
@@ -31,15 +32,15 @@ export class HomeComponent implements OnInit {
               'http://106.104.137.96:8080/TestApp/magicgem',
               'http://106.104.137.96:8080/TestApp/pharaoh',
               'http://106.104.137.96:8080/TestApp/royal777'];
-  constructor() { }
-
+              constructor() {}
   ngOnInit() {
     for (let i = 0 ; i < 14; i++) {
       this.gameiconsrc = 'http://106.104.137.96:8080/TestApp/gameWeb/assets/images/icon/game-' + i + '.png';
       this.tiles[i] = {cols: 1, rows: 1};
       this.imgsrc[i] = this.gameiconsrc;
     }
-    this.utcTime();
+
+      // this.utcTime();
   }
   onMouseOut(i: number): void {
     this.imgsrc[i] =  'http://106.104.137.96:8080/TestApp/gameWeb/assets/images/icon/game-' + i + '.png';
@@ -53,6 +54,6 @@ export class HomeComponent implements OnInit {
   utcTime(): void {
     setInterval(() => {
       this.timerNum = this.timerNum + 1 ;
-  }, 200);
+  }, 3000);
   }
 }

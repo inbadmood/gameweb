@@ -6,13 +6,16 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
 import { CustomMaterialModule } from '../custom-material.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   imports: [
+    NgbModule,
     CommonModule,
     HomeRoutingModule,
     CustomMaterialModule
   ],
-  declarations: [HomeComponent, HeaderComponent, AsideComponent ]
+  declarations: [HomeComponent, HeaderComponent, AsideComponent, SliderComponent]
 })
 export class HomeModule { }

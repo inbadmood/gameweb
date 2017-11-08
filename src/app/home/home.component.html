@@ -4,17 +4,6 @@
   </div>
 
   <div fxFlex fxLayout="row" class="main">
-
-      <!-- for moblie usage
-           <div fxFlex="200px" class="aside scrollbar" fxHide.xs>
-          <app-aside></app-aside>
-         </div>
-      <mat-sidenav-container fxFlex>
-          <mat-sidenav #sidenav mode="over" fxHide fxShow.xs>
-            <div fxFlex="200px" class="aside scrollbar">
-              <app-aside></app-aside>
-             </div>
-           </mat-sidenav> -->
            <mat-sidenav-container fxFlex>
               <mat-sidenav #sidenav mode="over" >
                 <div fxFlex="200px" class="aside scrollbar" >
@@ -24,11 +13,14 @@
 
     <!-- screen > 1280 -->
     <div class="content scrollbar" style="width:100%;height:100%">
+      <div class="slider">
+        <app-slider></app-slider>
+      </div>
       <div calss="jp">
           <img src={{jpsrc}} class="jpimg"/>
       </div>
       <div class="sideline">
-        <img src={{sidesrc}}/>
+        <img src={{sidesrc}} class="sideimg"/>
       </div>
       <!-- <div id="odometer" class="odometer" [innerHTML]="timerNum"></div> -->
 

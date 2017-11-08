@@ -1,0 +1,10 @@
+.slideimg
+{
+
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display:block;
+  margin:auto;
+}
