@@ -8,6 +8,7 @@ import { AsideComponent } from './aside/aside.component';
 import { CustomMaterialModule } from '../custom-material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
+import { HomeService } from './home-service';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { SliderComponent } from './slider/slider.component';
     HomeRoutingModule,
     CustomMaterialModule
   ],
-  declarations: [HomeComponent, HeaderComponent, AsideComponent, SliderComponent]
+  declarations: [HomeComponent, HeaderComponent, AsideComponent, SliderComponent],
+  providers: [HomeService]
 })
 export class HomeModule { }

@@ -16,9 +16,9 @@ export class SliderComponent implements OnInit {
     config.keyboard = false;
   }
   ngOnInit() {
-     for (let i = 0 ; i < 7; i++) {
+     for (let i = 0 ; i < 6; i++) {
     this.homeads[i] = { };
-    this.homeadsrcs[i] = 'http://106.104.137.96:8080/TestApp/gameWeb/assets/images/ui/HOMEPIC_' + i + '.png';
+    this.homeadsrcs[i] = 'http://106.104.137.96:8080/TestApp/gameWeb/assets/images/ui/HOMEPIC_' + i + '.jpg';
   }
   }
 
